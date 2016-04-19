@@ -1,0 +1,42 @@
+@font-face {
+	font-family: 'Supercell Magic';
+	src: url('fonts/Supercell-magic-webfont.eot');
+	src: local('☺'), url('fonts/Supercell-magic-webfont.woff') format('woff'), url('fonts/Supercell-magic-webfont.ttf') format('truetype'), url('fonts/Supercell-magic-webfont.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+html, body{font-family:sans-serif;text-align:center;font-size:100%;}
+.wrapper{max-width:1140px;margin:0 auto;padding:60px 0;}
+
+h1{font-family:'Supercell Magic';color:#fbca21;text-shadow:4px 4px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000;}
+h2{font-family:'Supercell Magic';}
+
+h2+p{margin-top:-1em;}
+p{font-size:18px;font-weight:300;}
+
+hr{background-color:#eee;margin:60px 0;border:none;height:1px;}
+
+
+em{background-color:#666;box-shadow:0 0 4px #ccc;border-radius:4px;display:inline-block;font-style:normal;margin:-4px;}
+span{border-radius:2px;color:#fff;display:inline-block;font-size:12px;padding:0.2em 1em;line-height:2.5em;margin:4px;text-transform:uppercase;width:43px;text-align:center;}
+em span{border-color:#666;margin:8px 4px;}
+em span:first-child{margin-left:8px;}
+em span:last-child{margin-right:8px;}
+span.s{background-color:#e5e5e5;color:#999;}
+span.g{background-color:#fbca21;}
+span.gi{background-color:#e1bc7b;}
+span.m{background-color:purple;}
+.haystack span{font-size:10px;opacity:0.5;padding:0.2em 0.7em;width:35px;}
+.haystack em span{opacity:1;}
+		
+
+.myorder{overflow:hidden;}
+.myorder span{cursor:pointer;}
+
+.source span{cursor:pointer;}
+
+.needle{}
+.trash{border:2px dashed #eee;color:#eee;padding:0 20px;margin-left:20px;margin:0 auto;padding:20px 0;width:100px;}
+.trash span{display:none;}
