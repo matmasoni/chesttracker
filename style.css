@@ -15,6 +15,9 @@ h2{font-family:'Supercell Magic';}
 
 h2+p{margin-top:-1em;}
 p{font-size:18px;font-weight:300;}
+a{color:#136099;text-decoration:none;transition:0.5s all;}
+a:hover{color:#fbca21;}
+
 
 hr{background-color:#eee;margin:60px 0;border:none;height:1px;}
 
@@ -33,12 +36,13 @@ span.m{background-color:purple;}
 .haystack span{font-size:10px;opacity:0.5;padding:0.2em 0.7em;width:35px;}
 .haystack em span{opacity:1;}
 		
-.padded{background:#333 url('images/125.png') 50% 50%;color:#fff;font-family:'Supercell Magic';margin-bottom:40px;}
-.padded p{padding:100px 0;}
+.padded{background:#333 url('images/125.png') 50% 50% fixed;color:#fff;font-family:'Supercell Magic';margin-bottom:40px;}
+.padded p{padding:100px 0;text-shadow:4px 4px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000;}
 
 .myorder{overflow:hidden;}
-.myorder span{cursor:pointer;}
+.myorder span{cursor:all-scroll;}
 
+.source{-webkit-user-select: none;-moz-user-select: none;-khtml-user-select: none;-ms-user-select: none;}
 .source span{background-size:160px 146px;background-position:bottom right;cursor:pointer;font-family:'Supercell Magic';padding:5px 100px 100px 10px;}
 .source span.s{background-image: url('images/silver.png');}
 .source span.g{background-image: url('images/gold.png');}
@@ -46,8 +50,11 @@ span.m{background-color:purple;}
 .source span.m{background-image: url('images/magic.png');}
 
 .needle{}
-.trash{border:2px dashed #eee;color:#eee;padding:0 20px;margin-left:20px;margin:1em auto;padding:20px 0;width:100px;}
+	
+	.button{font-family:'Supercell Magic';}
+
+.trash{border:2px dashed #ddd;color:#ddd;padding:0 20px;margin-left:20px;margin:1em auto;padding:20px 0;width:100px;}
 .trash span{display:none;}
 
-#footer{padding-bottom:60px;}
+#footer{padding:60px 0;}
 #footer p{font-size:12px;}
