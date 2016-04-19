@@ -30,15 +30,13 @@ function locate(haystack){
 		
 	//then find needle and add wrappers
 	var needle = $('.needle').html().toLowerCase().replace(/ ui-sortable-handle/g, '');
-	console.log(needle.replace(' ui-sortable-handle', ''));
 	var re = new RegExp('('+needle+')','gi');
 	var text = $('.haystack').html();
 	text = text.replace(re, '<em>$1</em>');
 	$('.haystack').html(text);
 	
-	next_chance();
-	
 	cookie.create('chests', needle);
+	next_chance();
 }
 
 function next_chance(){
@@ -61,7 +59,6 @@ function next_chance(){
 		}
 		chance.total++;
 	})
-	console.log(chance);
 	var comingup = "";
 	if(chance.total > 0){
 		for(var thing in chance){
@@ -81,16 +78,16 @@ function next_chance(){
 }
 
 $(document).ready(function () {
+	//grab haystack variable before highlighting is applied
+	var haystack = $('.haystack').html();
 	
 	// pull needle from cookie
 	if(cookie.read('chests')){
 		$('.needle').html(cookie.read('chests'));
+		locate(haystack);
 	}
 	
-	//grab haystack variable before highlighting is applied
-	var haystack = $('.haystack').html();
-	
-	locate(haystack);
+
 
 	//initiate needle management
 	$('.needle').sortable({
