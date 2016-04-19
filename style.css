@@ -17,16 +17,19 @@ h2+p{margin-top:-1em;}
 p{font-size:18px;font-weight:300;}
 a{color:#136099;text-decoration:none;transition:0.5s all;}
 a:hover{color:#fbca21;}
+small{font-size:12px;}
 
 
 hr{background-color:#eee;margin:60px 0;border:none;height:1px;}
 
 
-em{background-color:#666;box-shadow:0 0 4px #ccc;border-radius:4px;display:inline-block;font-style:normal;margin:-4px;}
-span{border-radius:2px;color:#fff;display:inline-block;font-size:12px;padding:0.2em 1em;line-height:2.5em;margin:4px;text-transform:uppercase;width:43px;text-align:center;}
-em span{border-color:#666;margin:8px 4px;}
-em span:first-child{margin-left:8px;}
-em span:last-child{margin-right:8px;}
+.haystack em{background-color:#666;box-shadow:0 0 4px #ccc;border-radius:4px;display:inline-block;font-style:normal;margin:-4px;}
+.haystack span,
+.needle span,
+.source span{border-radius:2px;color:#fff;display:inline-block;font-size:12px;padding:0.2em 1em;line-height:2.5em;margin:4px;text-transform:uppercase;width:43px;text-align:center;}
+.haystack em span{border-color:#666;margin:8px 4px;}
+.haystack em span:first-child{margin-left:8px;}
+.haystack em span:last-child{margin-right:8px;}
 span.s{background-color:#e5e5e5;color:#999;}
 span.g{background-color:#fbca21;}
 span.gi{background-color:#e1bc7b;}
@@ -50,8 +53,7 @@ span.m{background-color:purple;}
 .source span.m{background-image: url('images/magic.png');}
 
 .needle{}
-	
-	.button{font-family:'Supercell Magic';}
+.button{font-family:'Supercell Magic';}
 
 .trash{border:2px dashed #ddd;color:#ddd;padding:0 20px;margin-left:20px;margin:1em auto;padding:20px 0;width:100px;}
 .trash span{display:none;}

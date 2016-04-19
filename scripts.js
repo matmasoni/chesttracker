@@ -56,21 +56,33 @@ function next_chance(){
 			case 'Magic':
 				chance.magic++;
 				break;
+			//default will be triggered if at the end of cycle
+			default:
+				chance.silver++;
+				break;
 		}
 		chance.total++;
 	})
 	var comingup = "";
-	if(chance.total > 0){
+	if(chance.total < 12){
 		for(var thing in chance){
 			if(thing == 'total'){
 				comingup += chance.total+" matches found. "
 			} else {
 				var perc = Math.round(1000*chance[thing] / chance.total)/10;
 				if (perc > 0){
-					comingup += perc+"% chance your next chest will be "+thing+". "
+					comingup += perc+"% chance your next chest will be "+thing;
+					if(chance.total > 6){
+						comingup += ".<span title='see asterisk below'>*</span> "
+					} else {
+						comingup += ". "
+					}
 				}
 			}
 		}
+		
+	} else if(chance.total > 0){
+		comingup += chance.total+" matches found. Some possible locations within the cycle are highlighted below. Track more chest so we can narrow it down further."
 	} else {
 		comingup = "hmmm... no match was found for the order you entered. are you sure it's right?"
 	}
