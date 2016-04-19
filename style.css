@@ -33,7 +33,7 @@ span.m{background-color:purple;}
 .haystack span{font-size:10px;opacity:0.5;padding:0.2em 0.7em;width:35px;}
 .haystack em span{opacity:1;}
 		
-.padded{background:#333 url('images/125.png');color:#fff;font-family:'Supercell Magic';margin-bottom:40px;}
+.padded{background:#333 url('images/125.png') 50% 50%;color:#fff;font-family:'Supercell Magic';margin-bottom:40px;}
 .padded p{padding:100px 0;}
 
 .myorder{overflow:hidden;}

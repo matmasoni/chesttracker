@@ -81,12 +81,18 @@ function next_chance(){
 }
 
 $(document).ready(function () {
+	
+	// pull needle from cookie
+	if(cookie.read('chests')){
+		$('.needle').html(cookie.read('chests'));
+	}
+	
+	//grab haystack variable before highlighting is applied
 	var haystack = $('.haystack').html();
 	
-	// $('.haystack *').each(function( index ) {
-// 		haystack.push($(this).text());
-// 	});
+	locate(haystack);
 
+	//initiate needle management
 	$('.needle').sortable({
 		connectWith: ".trash",
 		update: function(event, ui) {
@@ -94,12 +100,13 @@ $(document).ready(function () {
 		}
 	});
 	$('.trash').sortable({
-		update: locate(haystack)
+		update: function(event, ui) {
+			locate(haystack)
+		}
 	});
 	$('.source').on('click', 'span', function(){
 		var chest = $(this).clone()
 		$('.needle').append(chest);
 		locate(haystack);
 	});
-
 });
