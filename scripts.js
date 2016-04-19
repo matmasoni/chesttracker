@@ -82,7 +82,7 @@ function next_chance(){
 		}
 		
 	} else if(chance.total > 0){
-		comingup += chance.total+" matches found. Some possible locations within the cycle are highlighted below. Track more chest so we can narrow it down further."
+		comingup += chance.total+" matches found.<span title='see asterisk below'>*</span> Track more chests so we can narrow it down further."
 	} else {
 		comingup = "hmmm... no match was found for the order you entered. are you sure it's right?"
 	}
