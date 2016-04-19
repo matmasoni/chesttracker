@@ -7,8 +7,8 @@
 }
 
 
-html, body{font-family:sans-serif;text-align:center;font-size:100%;}
-.wrapper{max-width:1140px;margin:0 auto;padding:60px 0;}
+html, body{font-family:sans-serif;text-align:center;font-size:100%;margin:0;padding:0;}
+.wrapper{max-width:1140px;margin:0 auto;}
 
 h1{font-family:'Supercell Magic';color:#fbca21;text-shadow:4px 4px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000;}
 h2{font-family:'Supercell Magic';}
@@ -28,15 +28,26 @@ span.s{background-color:#e5e5e5;color:#999;}
 span.g{background-color:#fbca21;}
 span.gi{background-color:#e1bc7b;}
 span.m{background-color:purple;}
+
+.haystack{padding-bottom:60px;}
 .haystack span{font-size:10px;opacity:0.5;padding:0.2em 0.7em;width:35px;}
 .haystack em span{opacity:1;}
 		
+.padded{background:#333 url('images/125.png');color:#fff;font-family:'Supercell Magic';margin-bottom:40px;}
+.padded p{padding:100px 0;}
 
 .myorder{overflow:hidden;}
 .myorder span{cursor:pointer;}
 
-.source span{cursor:pointer;}
+.source span{background-size:160px 146px;background-position:bottom right;cursor:pointer;font-family:'Supercell Magic';padding:5px 100px 100px 10px;}
+.source span.s{background-image: url('images/silver.png');}
+.source span.g{background-image: url('images/gold.png');}
+.source span.gi{background-image: url('images/giant.png');}
+.source span.m{background-image: url('images/magic.png');}
 
 .needle{}
-.trash{border:2px dashed #eee;color:#eee;padding:0 20px;margin-left:20px;margin:0 auto;padding:20px 0;width:100px;}
+.trash{border:2px dashed #eee;color:#eee;padding:0 20px;margin-left:20px;margin:1em auto;padding:20px 0;width:100px;}
 .trash span{display:none;}
+
+#footer{padding-bottom:60px;}
+#footer p{font-size:12px;}

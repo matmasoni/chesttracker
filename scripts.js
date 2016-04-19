@@ -77,7 +77,7 @@ function next_chance(){
 	} else {
 		comingup = "hmmm... no match was found for the order you entered. are you sure it's right?"
 	}
-	$('#comingup').html(comingup);
+	$('#comingup').html('<p>'+comingup+'</p>');
 }
 
 $(document).ready(function () {
