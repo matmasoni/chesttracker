@@ -10,7 +10,7 @@
 html, body{font-family:sans-serif;text-align:center;font-size:100%;margin:0;padding:0;}
 .wrapper{max-width:1140px;margin:0 auto;}
 
-h1{font-family:'Supercell Magic';color:#fbca21;text-shadow:4px 4px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000;}
+h1{font-family:'Supercell Magic';color:#fbca21;text-shadow:4px 4px 0 #000, 2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000;}
 h2{font-family:'Supercell Magic';}
 
 h2+p{margin-top:-1em;}
@@ -40,7 +40,7 @@ span.m{background-color:purple;}
 .haystack em span{opacity:1;}
 		
 .padded{background:#333 url('images/125.png') 50% 50% fixed;color:#fff;font-family:'Supercell Magic';margin-bottom:40px;}
-.padded p{padding:100px 0;text-shadow:4px 4px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000;}
+.padded p{padding:100px 0;text-shadow:4px 4px 0 #000, 2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000;}
 
 .myorder{overflow:hidden;}
 .myorder span{cursor:all-scroll;}

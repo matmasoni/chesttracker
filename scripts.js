@@ -35,7 +35,7 @@ function locate(haystack){
 	text = text.replace(re, '<em>$1</em>');
 	$('.haystack').html(text);
 	
-	cookie.create('chests', needle);
+	cookie.create('chests', needle, 365);
 	next_chance();
 }
 
@@ -67,7 +67,11 @@ function next_chance(){
 	if(chance.total < 12){
 		for(var thing in chance){
 			if(thing == 'total'){
-				comingup += chance.total+" matches found. "
+				if (chance.total == 1){
+					//don't display found matches
+				} else {
+					comingup += chance.total+" matches found. "
+				}
 			} else {
 				var perc = Math.round(1000*chance[thing] / chance.total)/10;
 				if (perc > 0){
