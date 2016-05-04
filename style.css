@@ -24,7 +24,7 @@ small.updated{font-family:'Supercell Magic';color:#999;}
 hr{background-color:#eee;margin:60px 0;border:none;height:1px;}
 
 
-.haystack em{background-color:#666;box-shadow:0 0 4px #ccc;border-radius:4px;display:inline-block;font-style:normal;margin:-4px;}
+.haystack em{border:1px solid #999;border-radius:4px;font-style:normal;margin:-5px;padding:14px 0 17px;}
 .haystack span,
 .needle span,
 .source span{border-radius:2px;color:#fff;display:inline-block;font-size:12px;padding:0.2em 1em;line-height:2.5em;margin:4px;text-transform:uppercase;width:43px;text-align:center;}
